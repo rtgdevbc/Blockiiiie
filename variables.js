@@ -42,3 +42,52 @@ function cage(){
 }
 console.log(cage());
 //console.log(fName);
+
+//data type
+
+//Number
+let num = 10;
+console.log(typeof num);
+
+//String
+let myString = 'Raviteja';
+console.log(typeof myString);
+
+//array
+let myArr = [1, 2, 3];
+console.log(typeof myArr);
+
+//object
+let myObj = {
+    stdName: 'Raviteja',
+    rollNo: 27,
+    cgpa: 7.92,
+    isPassed: true
+}
+console.log(myObj['rollNo']);
+console.log(myObj.rollNo);
+console.log(myObj["cgpa"]);
+//we can modify content inside of the obj even though obj is declared as const
+//1 ex.
+const product = {
+    pName: "Parker Jotter Std",
+    rating: 4.5,
+    price: 270,
+    deal: false
+}
+console.log(product.pName);
+console.log(product['rating']);
+console.log(product["price"]);
+//2 ex.
+const profile = {
+    userName: "shradhkapra",
+    isFollow: false,
+    following: 500,
+    followers: 2000,
+}
+
+//console.log(profile);
+console.log(typeof profile);
+console.log(typeof profile.followers);
+console.log(typeof profile['userName']);
+
