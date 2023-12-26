@@ -91,3 +91,33 @@ console.log(typeof profile);
 console.log(typeof profile.followers);
 console.log(typeof profile['userName']);
 
+
+
+// variable from hitesh 
+
+const accEmail = "graviteja@gmail.com";
+let accId = 1234567;
+var accPass = 1234;
+accCity = "Kurnool";
+
+//for print all the variables at a time in table for
+console.table([accEmail, accId, accPass, accCity]);
+
+
+accId = 1;
+accPass = 7;
+accCity = "Hyd";
+let accState;
+console.table([accEmail, accId, accPass, accCity, accState]);
+
+/*let var details
+scope {}
+if, else for and while loop
+var doesn't follow this scope only let will follow this scope */
+
+//var will not use since block and functional scope issue
+
+
+
+
+
