@@ -10,3 +10,4 @@ console.log('teja');
 let a = 'Ravi';
 document.write('Raviteja');//to print on browser window
 console.log('teja');//to print on console of browser
+
