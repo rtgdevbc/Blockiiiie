@@ -18,4 +18,4 @@ let temp = null;
 let tempToNum = Number(temp);//trying to convert null to number
 console.log(typeof tempToNum);//
 console.log(tempToNum);
-
+ 
