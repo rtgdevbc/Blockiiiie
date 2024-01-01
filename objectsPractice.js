@@ -18,7 +18,11 @@ const bike = {
         seatCover : "leather"
     },
     startBike: function (){
-        console.log(`Bike name is ${this.bikeName} and its color is ${this.color}`);
+        console.log(`Bike name is ${this.bikeName}, color is ${bike.color} and its seat capacity is ${this.seat.capacity}`);
+    },
+    chargingStatus : false,
+    changeCharginStatus : function (status){
+        this.chargingStatus = status;
     }
 }
 //console.log(bike);
@@ -26,3 +30,6 @@ const bike = {
 //console.log(startStatus);
 
 bike.startBike();
+console.log(`charing status earlier:  ${bike.chargingStatus}`);
+bike.changeCharginStatus(true);
+console.log(`charing status now: ${bike.chargingStatus}`);
