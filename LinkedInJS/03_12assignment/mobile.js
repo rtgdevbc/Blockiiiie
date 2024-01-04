@@ -13,7 +13,6 @@ class Mobile {
     };
     changeDisplay(newScreen){
         this.screenType = newScreen;
-    };
-    
+    }; 
 }
 export default Mobile;
