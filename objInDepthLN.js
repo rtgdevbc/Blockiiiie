@@ -24,8 +24,14 @@ const technology = {
         this.techUses.hashFunction = hashMethod;
     }
 }
-console.log(`current technology is ${technology.techName} which uses ${technology.techUses.network} network and ${technology.techUses.hashFunction} technologies`);
-technology.webTech("FullStack", "TraditionalDB"); 
+//console.log(`current technology is ${technology.techName} which uses ${technology.techUses.network} network and ${technology.techUses.hashFunction} technologies`);
+//technology.webTech("FullStack", "TraditionalDB"); 
 technology.switchToOwnership(true);
 technology.changeOfHashing("SHA512");
-console.log(`current technology is ${technology.techName} which uses ${technology.techUses.network} network and ${technology.techUses.hashFunction} technologies`);
+//console.log(`current technology is ${technology.techName} which uses ${technology.techUses.network} network and ${technology.techUses.hashFunction} technologies`);
+
+//to delete a property of an obj 
+
+delete technology.techUses['hashFunction'];
+console.log(technology.techUses);
+
