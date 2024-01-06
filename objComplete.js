@@ -279,6 +279,13 @@ for (let i = 0; i<objKeys.length; i++){
 
 //array's 1st element called key and 2nd element called value
 
+//++++++++ TO CHECK THE PRESENCE OF PROPERTY OF AN OBJ++++++++
+
+//console.log(ob1.hasOwnProperty('4'));
+//true
+
+//console.log(ob1.hasOwnProperty('ravi'));//false
+
 
 
 
