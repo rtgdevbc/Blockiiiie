@@ -287,5 +287,3 @@ for (let i = 0; i<objKeys.length; i++){
 //console.log(ob1.hasOwnProperty('ravi'));//false
 
 
-
-
