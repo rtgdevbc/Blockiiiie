@@ -19,11 +19,35 @@
  * document.getElementById("idName") will grab the element from the HTML 
  * .value will pick the vlaue from that element 
  */
+
+let correctNumber = generateRandomNum();
 window.onload = function(){
-    document.getElementById("number-submit").addEventListener("click", playGame);
+    document.getElementById("number-submit").addEventListener("click",  playGame);
+    
 }
 
 function playGame(){
-    const num = document.getElementById("number-guess").value;
-    console.log(num);
+    const numGuess = document.getElementById("number-guess").value;
+    //console.log(num);
+    checkGuess(numGuess);
 }
+function checkGuess(numGuess){
+    if (correctNumber === Number(numGuess)){
+        console.log("!Awesome you are correct");
+    }
+    else if (correctNumber < Number(numGuess)){
+        console.log("Guess is too high..!");
+    }
+    else {
+        console.log("Guess is too low..!");
+    }
+}
+function generateRandomNum (){
+    const randomNum = Math.floor(Math.random()*100) + 1;
+    //console.log(randomNum);
+    return randomNum;
+}
+//generateRandomNum();//testing purpose calling to check the function generateRandomNum()
+
+//😀
+
