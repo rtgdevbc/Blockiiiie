@@ -47,11 +47,29 @@ if(true){
     const num = 1;
     if(true){
         const num2 = 2;
-        console.log(num + num2); //nested blocks will have access to its global variables
+        //console.log(num + num2); //nested blocks will have access to its global variables
     }
     //console.log(num2); //block level variable num2 is not accessable at outside of block
 }
 //console.log(num); //block level variable num2 is not accessable at outside of block
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++HOISTING+++++++++++++++++++++++++++++++++++++++++++
+
+console.log(addOne(6)); //7 hoisting of fuction takes place and fucntion declaration will allow this
+//we can call the fuction before declaring it is possible in JS because of Hoisting
+function addOne (num){
+    return num+1;
+}
+//---------------------------------------------------------------------------------------------------
+console.log(addTwo(6)); //error (ReferenceError: Cannot access 'addTwo' before initialization)
+const addTwo = function (num){
+    return num + 1;
+}
+console.log(addTwo(6)); //7
+//above type is function expression
+
+
 
 
 
