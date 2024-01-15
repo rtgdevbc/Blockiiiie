@@ -23,3 +23,16 @@ var c = 10;
 }
 console.log(c); //100
 
+var x = 10;//both are declared in same level hence throw an error
+let x = 10;
+//illegal
+let y = 10;
+{
+    var y = 10; //declared in global and let y is in script which is same level 
+}
+//illegal
+//should not cross the limit or boundary
+
+
+
+
