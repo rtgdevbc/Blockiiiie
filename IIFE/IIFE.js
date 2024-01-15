@@ -32,3 +32,9 @@
 })();
 //arrow unnamed IIFE function
 
+//passing parametres into IIFE 
+( (name) =>{
+    console.log(name);
+})("Ravi"); //Ravi
+//passed parameters into IIFE 
+
