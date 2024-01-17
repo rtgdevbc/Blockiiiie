@@ -37,5 +37,14 @@ const strCount = (str) => {
 
 //shortform for counting number of elements in a string array is 
 
+var name = "Ram";
+function a (){
+    var name = "ravi";
+    console.log("inside function");
+}
+a();
+console.log(name);//Ram
+//Since var is function scope 
+
 
 

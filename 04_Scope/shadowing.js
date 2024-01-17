@@ -19,19 +19,36 @@ const b = 1;
 var c = 10;
 {
     var c = 100;
-    console.log(c); //100
+    // console.log(c); //100
 }
-console.log(c); //100
+// console.log(c); //100
 
-var x = 10;//both are declared in same level hence throw an error
-let x = 10;
-//illegal
-let y = 10;
-{
-    var y = 10; //declared in global and let y is in script which is same level 
-}
+// var x = 10;//both are declared in same level hence throw an error
+// let x = 10;
+// //illegal
+// let y = 10;
+// {
+//     var y = 10; //declared in global and let y is in script which is same level 
+// }
 //illegal
 //should not cross the limit or boundary
+
+//lexical block scope
+let z = 1;
+{
+    let z = 2;
+    {
+        let z = 3;
+        {
+            let z = 4;
+            console.log(z);
+        }
+        console.log(z);
+    }
+    console.log(z);
+}
+console.log(z);
+
 
 
 
