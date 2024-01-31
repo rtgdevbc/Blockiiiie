@@ -31,21 +31,23 @@ let china = india();
 //     },(i+1)*1000);
 // }
 // var i = 1;
-// for (var i = 0; i<3; i++){
+// const a = 3;
+// for (let i = 3; i>0; i--){
 //     setTimeout(function (){
-//         console.log(i);
-//     },(i+1)*1000);
+//         console.log(`loop number: ${(a+1)-i},value of i: ${i}`);
+//     },(i)*1000);
 // }
 
 //==========================IIFE solution to the closure and setTimeout problem=====
 
-for (var i = 0; i < 3; i++) {
+for (var i = 1; i <= 3; i++) {
     (function (index) {
         setTimeout(function () {
-            //console.log(index);
-        }, (index + 1) * 1000);
+            console.log(index);
+        }, (index) * 1000);
     })(i);
 }
+
 
 
 //console.log(i+"outside");
