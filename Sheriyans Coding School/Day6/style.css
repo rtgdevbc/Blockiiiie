@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anurati";
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    /* background-color: rgba(255, 0, 0, 0.358); */
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1707496964676-8abbf31adb1e?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#overlay {
+    /* position: relative; */
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 100%;
+    height: 100%; 
+}
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(222, 194, 194, 0.521);
+    text-align: center;
+    letter-spacing: 10px;
+}
+#content p{
+    margin-top: 10px;
+}
+#content button{
+    width: 250px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: rgba(222, 194, 194, 0.521);
+    letter-spacing: 10px;
+}
+#content button:hover{
+    background-color: rgb(99, 89, 89);
+    
+}
+
+
+
+
+

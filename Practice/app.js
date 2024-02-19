@@ -113,39 +113,102 @@ for (el in numObj){
 // toWord(20);
 
 
-setTimeout(()=>{
-    console.log("1st setTimeout of 1000ms");
-    setTimeout(()=>{
-        console.log("2nd setTimeout of 900ms");
-        setTimeout(()=>{
-            console.log("3rd setTimeout of 800ms");
-            setTimeout(()=>{
-                console.log("4th setTimeout of 700ms");
-                setTimeout(()=>{
-                    console.log("5th setTimeout of 600ms");
-                    setTimeout(()=>{
-                        console.log("6th setTimeout of 500ms");
-                        setTimeout(()=>{
-                            console.log("7th setTimeout of 400ms");
-                            setTimeout(()=>{
-                                console.log("8th setTimeout of 300ms");
-                                setTimeout(()=>{
-                                    console.log("9th setTimeout of 200ms");
-                                    setTimeout(()=>{
-                                        console.log("10th setTimeout of 100ms");
-                                        setTimeout(()=>{
-                                            console.log("0th setTimeout of 0ms");
-                                        }, 0);
-                                    }, 100);
-                                }, 200);
-                            }, 300);
-                        }, 400);
-                    }, 500);
-                }, 600);
-            }, 700);
-        }, 800);
-    }, 900);
-}, 1000);
+// setTimeout(()=>{
+//     console.log("1st setTimeout of 1000ms");
+//     setTimeout(()=>{
+//         console.log("2nd setTimeout of 900ms");
+//         setTimeout(()=>{
+//             console.log("3rd setTimeout of 800ms");
+//             setTimeout(()=>{
+//                 console.log("4th setTimeout of 700ms");
+//                 setTimeout(()=>{
+//                     console.log("5th setTimeout of 600ms");
+//                     setTimeout(()=>{
+//                         console.log("6th setTimeout of 500ms");
+//                         setTimeout(()=>{
+//                             console.log("7th setTimeout of 400ms");
+//                             setTimeout(()=>{
+//                                 console.log("8th setTimeout of 300ms");
+//                                 setTimeout(()=>{
+//                                     console.log("9th setTimeout of 200ms");
+//                                     setTimeout(()=>{
+//                                         console.log("10th setTimeout of 100ms");
+//                                         setTimeout(()=>{
+//                                             console.log("0th setTimeout of 0ms");
+//                                         }, 0);
+//                                     }, 100);
+//                                 }, 200);
+//                             }, 300);
+//                         }, 400);
+//                     }, 500);
+//                 }, 600);
+//             }, 700);
+//         }, 800);
+//     }, 900);
+// }, 1000);
+
+
+
+var planet = {
+    id: 756,
+    Info: {
+        name: 'Epsilon',
+        location: {
+            cluster: 'Odin galaxy'
+        },
+        satellite:{
+        	name: 'Cygnus',
+        	location:{
+        		cluster: 'Icarus belt'
+        	}
+        }
+    }
+}
+// console.log(typeof planet.Info.location.cluster);
+
+// console.log(typeof planet.Info['satellite'].location['cluster'])
+// console.log(planet.Info.location.hasOwnProperty('cluster'));
+
+// console.log(planet.Info.satellite.location.cluster);
+// delete planet.Info.satellite.location.cluster;
+// console.log(planet.Info.satellite.location.cluster);
+// console.log(typeof(planet.id));//both are same
+// console.log(typeof planet.id);//both are same
+
+var x = {
+    name : 'ravi',
+}
+var y = x;
+// console.log(y.name);//ravi
+x.name='teja';
+// console.log(y.name);//teja
+
+
+//Objects passed as reference and not copied:
+
+var x = {
+	name: "Berlin",
+	country: "Germany"
+} 
+
+var y = x;
+x.name = "Munich";
+y.name = "Heidelberg";
+// console.log(x.name);//Heidelberg
+// console.log(y.name);//Heidelberg
+
+var array = ["Mountains","Sea","Island","Forest","Cave"];
+console.log(array.slice(2));
+console.log(array);
+console.log(array.splice(2));
+console.log(array);
+console.log(array[2]);
+
+
+
+
+
+
 
 
 

@@ -3,3 +3,5 @@ let i = 1;
 document.getElementById("clickMe").addEventListener("click", function abc(){
     console.log("clicked", ++i);
 });
+
+document.querySelectorAll("body ol:lastchild")
